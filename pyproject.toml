@@ -1,0 +1,28 @@
+[build-system]
+# https://is.gd/ZnpEAU
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages]
+# https://is.gd/icNCJN
+find = {}
+
+
+[project]
+name = "flypenguin-resolver-test"
+description = "pip compile does not like tensorflow"
+readme = "README.md"
+license = {text = "License :: Public Domain"}
+version = "1.0.0"
+requires-python = ">=3.10, <3.11"
+dependencies = [
+    "tensorflow>=2.13.0,<2.14.0",
+]
+classifiers = [
+    "License :: Public Domain",
+    "Programming Language :: Python :: 3.10",
+]
+
+[project.optional-dependencies]
+dev = []
+test = []
